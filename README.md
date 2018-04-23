@@ -1,2 +1,2 @@
-# gymbuddy_android_app
+# sportybuddy_android_app
 a self learning android project written in kotlin
