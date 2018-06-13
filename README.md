@@ -1,2 +1,2 @@
 # sportybuddy_android_app
-a self learning android project written in kotlin
+a self learning android project written in kotlin.

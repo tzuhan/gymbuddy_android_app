@@ -3,6 +3,10 @@ package tw.com.sportbud.sportbud
 import android.os.Bundle
 import android.support.design.widget.BottomNavigationView
 import android.support.v7.app.AppCompatActivity
+import android.widget.AdapterView
+import android.widget.ArrayAdapter
+import android.widget.GridView
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -30,5 +34,11 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
+        val gridview: GridView = findViewById(R.id.grid_view)
+        gridview.adapter = ImageAdapter(this)
+
+        gridview.onItemClickListener = AdapterView.OnItemClickListener{
+            parent, v, position, id -> Toast.makeText(this, "$position", Toast.LENGTH_SHORT).show()
+        }
     }
 }
