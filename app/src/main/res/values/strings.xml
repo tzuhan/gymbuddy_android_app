@@ -1,6 +1,10 @@
 <resources>
     <string name="app_name">Sportbud</string>
+    <string name="title_map">Map</string>
     <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_activity">Activities</string>
+    <string name="title_message">Notifications</string>
+
+    <string name="greeting_msg">People around:</string>
+    <string name="title_activity_maps">Map</string>
 </resources>

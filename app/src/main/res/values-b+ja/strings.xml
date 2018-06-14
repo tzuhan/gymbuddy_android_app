@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ジムバディ</string>
+    <string name="title_map">地図</string>
+    <string name="title_home">ホーム</string>
+    <string name="title_activity">アクティビティ</string>
+    <string name="title_message">メッセージ</string>
+
+    <string name="greeting_msg">近くのバディ：</string>
+</resources>

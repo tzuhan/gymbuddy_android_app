@@ -3,6 +3,7 @@ package tw.com.sportbud.sportbud
 import android.os.Bundle
 import android.support.design.widget.BottomNavigationView
 import android.support.v7.app.AppCompatActivity
+import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.GridView
@@ -34,11 +35,15 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
-        val gridview: GridView = findViewById(R.id.grid_view)
-        gridview.adapter = ImageAdapter(this)
+        when (navigation.selectedItemId) {
+            R.id.navigation_map -> {
+                val gridview: GridView = findViewById(R.id.grid_view)
+                gridview.adapter = ImageAdapter(this)
 
-        gridview.onItemClickListener = AdapterView.OnItemClickListener{
-            parent, v, position, id -> Toast.makeText(this, "$position", Toast.LENGTH_SHORT).show()
+                gridview.onItemClickListener = AdapterView.OnItemClickListener{
+                    parent, v, position, id -> Toast.makeText(this, "$position", Toast.LENGTH_SHORT).show()
+                }
+            }
         }
     }
 }

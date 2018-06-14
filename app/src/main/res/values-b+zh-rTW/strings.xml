@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">運動夥伴</string>
+    <string name="title_map">地圖</string>
+    <string name="title_home">個人頁面</string>
+    <string name="title_activity">活動類型</string>
+    <string name="title_message">通知</string>
+
+    <string name="greeting_msg">找夥伴：</string>
+</resources>
